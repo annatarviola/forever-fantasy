@@ -1,9 +1,31 @@
-h1 {
-  font-size: 60px;
+.title {
+  font-family: "FinalFantasy";
+  font-size: 80px;
+  color: var(--yellow);
+  margin: 0;
 }
 
-h2 {
+.subtitle1 {
+  font-family: "Poiret One";
+  font-size: 36px;
+  color: var(--yellow);
+  margin: 0;
+}
+
+.subtitle2 {
+  font-family: "FinalFantasy";
   font-size: 40px;
+  color: var(--yellow);
+  margin: 0;
+  display: flex;
+  justify-content: space-between; /* Evenly spaces items */
+  align-items: center;
+  font-size: 24px; /* Adjust font size as needed */
+  gap: 2rem; /* Add some gap between items */
+}
+
+.subtitle2 span {
+  white-space: nowrap; /* Ensure no wrapping of individual words */
 }
 
 button {
@@ -15,11 +37,8 @@ button {
   color: var(--sage);
 }
 
-.ff {
-  font-family: "FinalFantasy";
-}
-
-.poiret {
-  font-family: "Poiret One";
-  font-size: 50px;
+.container {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
 }
