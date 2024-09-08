@@ -1,0 +1,89 @@
+.header {
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  color: var(--sage);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: 10px auto;
+  flex-direction: column;
+}
+
+.header::after {
+  content: ""; /* Empty content for the oval */
+  position: absolute;
+  bottom: 40%; /* Adjust this value to position the oval */
+  left: 50%;
+  transform: translateX(-50%); /* Center the oval */
+  width: 50%; /* Width adapts to the text length */
+  height: 34px; /* Adjust the height to control the oval's thickness */
+  background-color: var(--blue-glow);
+  border-radius: 40%; /* Creates the oval shape */
+  z-index: -1; /* Ensure the oval is behind the text */
+  filter: blur(4px);
+  /* box-shadow: 0 0 20px rgba(121, 175, 159, 0.5); */
+}
+
+.title {
+  display: flex;
+  align-items: flex-end;
+  gap: 15px;
+  padding: 10px;
+}
+
+.nav {
+  display: flex;
+  gap: 3rem;
+}
+
+h1 {
+  font-family: "FinalFantasy";
+  font-size: 56px;
+  margin: 0;
+}
+
+h2 {
+  font-family: "Poiret One";
+  font-size: 46px;
+  margin: 0px;
+  letter-spacing: 1px;
+}
+
+.nav_btn {
+  position: relative; /* Position the button to use ::after pseudo-element */
+  font-family: "FuturaCondensed";
+  font-size: 22px;
+  margin: 0;
+  background: none;
+  border: none;
+  transition: 200ms;
+  color: var(--sage);
+}
+
+.nav_btn::after {
+  content: ""; /* Empty content for the oval */
+  position: absolute;
+  bottom: 15px; /* Adjust this value to position the oval */
+  left: 50%;
+  transform: translateX(-50%); /* Center the oval */
+  width: 100%; /* Width adapts to the text length */
+  height: 12px; /* Adjust the height to control the oval's thickness */
+  background-color: var(--blue-glow);
+  border-radius: 40%; /* Creates the oval shape */
+  z-index: -1; /* Ensure the oval is behind the text */
+  filter: blur(2px);
+  transition: 200ms;
+}
+
+.nav_btn:hover::after {
+  background-color: rgb(255, 184, 0, 0.32); /* Change color on hover */
+  transition: 200ms;
+}
+
+.nav_btn:hover {
+  transition: 200ms;
+  color: var(--yellow);
+  cursor: pointer;
+}

@@ -1,0 +1,25 @@
+h1 {
+  font-size: 60px;
+}
+
+h2 {
+  font-size: 40px;
+}
+
+button {
+  position: relative; /* Position the button to use ::after pseudo-element */
+  margin: 0;
+  background: none;
+  border: none;
+  transition: 200ms;
+  color: var(--sage);
+}
+
+.ff {
+  font-family: "FinalFantasy";
+}
+
+.poiret {
+  font-family: "Poiret One";
+  font-size: 50px;
+}
